@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ asset('css/form_css/form_game.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<div class="back"></div>
+<div class="registration-form">
+    <header>
+        <h1>Edit  Categorie</h1>
+        <p>Fill in all informations</p>
+    </header>
+
+    <form method="post" enctype="multipart/form-data">
+
+        {{ form_start(form) }}
+
+        <div class="input-section name-section">
+            {{ form_widget(form.name, {'attr':{
+                'class':'name input',
+                'placeholder':'Category Name'}})
+            }}
+            <div class="animated-button"><span class="icon1"><i class="fa fa-gamepad" aria-hidden="true"></i></span><span class="next-button name"><i class="fa fa-arrow-up"></i></span></div>
+        </div>
+
+        <div class="input-section image-section" style="z-index: 1">
+            {{ form_widget(form.image, {'attr':{
+                'class':'image input',
+                'placeholder':'IMAGE PATH'}})
+            }}
+            <div class="animated-button">
+                <span class="icon4"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+                <span class="next-button image"><i class="fa fa-arrow-up"></i></span>
+
+            </div>
+        </div>
+
+        <div class="success">
+            <p>Category Added With Success</p>
+        </div>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/form_game.js') }}"></script>

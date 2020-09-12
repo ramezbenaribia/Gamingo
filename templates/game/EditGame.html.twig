@@ -1,0 +1,178 @@
+{% extends 'base.html.twig' %}
+{% block style %}
+    <link rel="stylesheet" href="{{ asset('css/Game.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/EditGame.css') }}">
+
+{% endblock %}
+
+{% block title %}
+    {% if game.name %}
+    {{ game.name }}
+    {% else %}
+    Add a new game
+    {% endif %}
+{% endblock %}
+{% block script %}
+<script src="{{ asset('js/EditGame.js') }}"></script>
+{% endblock %}
+{% block content %}
+
+    {{ form_start(form) }}
+    <section class="container-fluid">
+        <div class="card">
+
+            {% if game.image %}
+                <img id="imageResult1"  class="img-fluid rounded shadow-sm mx-auto d-block card-img-top"  src="{{ asset( game.image ) }}" alt={{ game.name }}>
+            {% else %}
+                <img id="imageResult1" class="img-fluid rounded shadow-sm mx-auto d-block"  src="{{ asset('images/plus.png') }}"   alt="add.image">
+            {% endif %}
+            {{form_widget(form.image ,{'attr':{
+                'class':' form-control border-0 rounded-input',
+                'id' : 'upload1',
+                'value' : game.image ,
+                'onchange' : "readURL1(this);" ,
+                'type':'file',
+            } } ) }}
+
+            <div class="card-body">
+                name of the game :
+                {{ form_widget(form.name, {'attr':{
+                        'class':'rounded-input',
+
+                    } }) }}
+                <p class="card-text">
+                    description :
+                    {{ form_widget(form.desccription, {'attr':{
+                        'class':'rounded-input',
+                        'type':'text',
+                    } }) }}
+                    <br> <br>
+
+                    Genre:  {{ form_widget(form.categorie, {'attr':{
+                        'class':'rounded-input',
+
+                    } }) }}
+                    <br> <br>
+
+                    Original release date  : {{ form_widget(form.date, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br> <br>
+                    License  : {{ form_widget(form.license, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br> <br>
+                    Game mode  : {{ form_widget(form.mode, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br> <br>
+                    Engine  : {{ form_widget(form.engine, {'attr':{
+                        'class':'rounded-input ',
+                        'type':'text',
+                    } }) }}
+                    <br> <br>
+                    Platforms  :
+                    {{ form_widget(form.console, {'attr':{
+                        'class':'rounded-input ',
+                        'type':'checkbox',
+                    } }) }}
+
+
+                </p>
+                 company : {{ form_widget(form.company, {'attr':{
+                    'class':'rounded-input input100',
+                    'type':'text',
+                } }) }}
+            </div>
+        </div>
+
+        <div class="card">
+
+            trailer URL :
+            {{ form_widget(form.trailer, {'attr':{
+                'class':'rounded-input input100',
+                'type':'text',
+            } }) }}
+
+            {% block article %}
+                <article>
+                    titre 1 :
+                    {{ form_widget(form.titre1, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br>
+                    text 1 :
+                    {{ form_widget(form.text1, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br> <br>
+                    titre 2 :
+                    {{ form_widget(form.titre2, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br>
+                    text 2 :
+                    {{ form_widget(form.text2, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br>
+
+                    <br> <br> <br>
+                    titre 3 :
+                    {{ form_widget(form.titre3, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br>
+                    text 3 :
+                    {{ form_widget(form.text3, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+
+                    <br> <br> <br>
+                    titre 4 :
+                    {{ form_widget(form.titre4, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                    <br>
+                    text 4 :
+                    {{ form_widget(form.text4, {'attr':{
+                        'class':'rounded-input input100',
+                        'type':'text',
+                    } }) }}
+                </article>
+
+                {{ form_widget(form.Submit, {'attr':{
+                    'class':'btn btn-primar rounded-input',
+                } }) }}
+            {% endblock %}
+        </div>
+
+        <div class="card">
+            {% if game.image2 %}
+                <img id="imageResult2"  class="img-fluid rounded shadow-sm mx-auto d-block card-img-top"  src="{{ asset( game.image2 ) }}" alt={{ game.name }}>
+            {% else %}
+                <img id="imageResult2" class="img-fluid rounded shadow-sm mx-auto d-block"  src="{{ asset('images/plus.png') }}"   alt="add.image">
+            {% endif %}
+            {{form_widget(form.image2 ,{'attr':{
+                'class':'rounded-input form-control border-0 ',
+                'id' : 'upload2',
+                'onchange' : "readURL2(this);" ,
+                'type':'file',
+            } } ) }}
+
+        </div>
+
+
+    </section>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+.container-fluid{
+    width: 70%;
+}
+.container-fluid .card{
+    padding-bottom: 2%;
+}
+.wrap-login100-form-btn{
+    width: 40%;
+}
+
+.container-fluid .card:nth-child(1) {
+    width: 19%;
+    padding: 6px;
+}
+.container-fluid .card:nth-child(2){
+    width: 78%;
+    padding-left: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.wrap-input100{
+    width: 90%;
+    margin-left: 4%;
+}
+.card .row{
+    width: 90%;
+    margin-left: 0%;
+}
+
+#ddm3 h5{
+    float: none;
+}
+#paiement h5 {
+    float: none !important;
+}
+#testimonials p {
+    color: #b2dbe6 !important;
+}
+.form{
+    width: 100%;
+}
+
+.image-area {
+    border: 2px dashed #c8bbbb !important;
+    padding: 5px !important;
+    width: 100% !important;
+}
+.container-fluid .card img {
+    width: 90%;
+    margin-top: 6%;
+}
+label{
+    color: #999999 !important;
+}
+
+

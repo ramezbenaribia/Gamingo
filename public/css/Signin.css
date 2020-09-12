@@ -1,0 +1,22 @@
+.container-login100{
+    background-color: #d3d7eb;
+}
+.wrap-login100{
+    background-color: #dbdeeb;
+    box-shadow: 0px 0px 20px black;
+    width: 40%;
+}
+.wrap-login100-form-btn{
+    width: 40%;
+}
+
+@media (max-width: 767px) {
+    .wrap-login100{
+        width: auto;
+    }
+}
+@media (max-width: 479px) {
+    .wrap-login100{
+        width: auto;
+    }
+}

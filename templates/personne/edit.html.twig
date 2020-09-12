@@ -1,0 +1,125 @@
+{% extends 'personne/connected.html.twig' %}
+
+{% block title %}
+    Profile Editing
+{% endblock %}
+{% block icon %}
+    <link rel="icon" type="image/png" href="{{asset('form_staff/images/icons/settings.png')}}"/>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('form_staff/fonts/iconic/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('form_staff/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('form_staff/vendor/animsition/css/animsition.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('form_staff/vendor/css-hamburgers/hamburgers.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/form_css/util.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/form_css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/Home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Game.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Connected.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Edit.css') }}">
+
+
+{%  endblock %}
+{% block script %}
+
+    <script src="{{ asset('js/Edit.js') }}"></script>
+
+{% endblock %}
+{% block content %}
+
+    <section class="container-fluid">
+        {{ form_start(form ,{'attr':{
+            'class':' form',
+        } } ) }}
+        <div class="card">
+            <div class="image-area mt-4">
+            {% if personne.image %}
+                <img id="imageResult"  class="img-fluid rounded shadow-sm mx-auto d-block"  src="{{ asset(personne.image) }}" alt=""{{ personne.name }}>
+            {% else %}
+                <img id="imageResult" class="img-fluid rounded shadow-sm mx-auto d-block"  src="{{ asset('images/user_default.png') }}"   alt="user.image">
+            {% endif %}
+            </div>
+
+            <div class="card-body" >
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+
+            {{form_widget(form.image ,{'attr':{
+                'class':' form-control border-0 ',
+                'id' : 'upload',
+                'onchange' : "readURL(this);" ,
+                'type':'file',
+            } } ) }}
+{#                <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>#}
+{#                <div class="input-group-append">#}
+{#                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>#}
+{#                </div>#}
+            </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="row">
+                <div class="wrap-input100 col-6">
+                    <label>  Name :</label>
+
+                    {{ form_widget(form.name, {'attr':{
+                        'class':'input100',
+                        'type':'text',
+                    } }) }}
+
+                </div>
+                <div class="wrap-input100 col-6">
+                    <label>  FirstName :</label>
+                    {{ form_widget(form.firstname, {'attr':{
+                        'class':'input100',
+                        'type':'text',
+                    } }) }}
+
+                </div>
+            </div>
+
+            <div class="wrap-input100">
+                <label>  Age :</label>
+                {{ form_widget(form.age, {'attr':{
+                    'class':'input100',
+                    'type':'text',
+                } }) }}
+
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                <label>  Email :</label>
+                {{ form_widget(form.email, {'attr':{
+                    'class':'input100',
+                    'type':'text',
+                } }) }}
+
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+                <label>  Password :</label>
+                {{ form_widget(form.password, {'attr':{
+                    'class':'input100',
+                } }) }}
+
+            </div>
+            <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+                    {{ form_widget(form.sign_up, {'attr':{
+                        'class':'login100-form-btn',
+                    } }) }}
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+{% endblock%}

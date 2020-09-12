@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <link href="{{ asset('css/material-dashboard.css') }}" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ asset('css/catégorie_style.css') }}">
+
+    <title> Projet JEUX
+    </title>
+    <!-- LOADER -->
+
+    <!-- END LOADER -->
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+
+
+        <p class='deepshadow'>Catégories</p>
+        <div id="btn_container">
+            <button class="flexibility button">Action</button>
+            <button class="flexibility button">sports</button>
+            <button class="flexibility button">Adventure</button>
+            <button class="flexibility button">Strategy</button>
+            <button class="flexibility button">Simulation</button>
+            <button class="flexibility button">Racing</button>
+        </div>
+        <p class='deepshadow'>Rate us</p>
+        <div class="rating">
+            <input type="radio" name="rating-star" class="rating__control" id="rc1">
+            <input type="radio" name="rating-star" class="rating__control" id="rc2">
+            <input type="radio" name="rating-star" class="rating__control" id="rc3">
+            <input type="radio" name="rating-star" class="rating__control" id="rc4">
+            <input type="radio" name="rating-star" class="rating__control" id="rc5">
+            <label for="rc1" class="rating__item">
+                <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </label>
+            <label for="rc2" class="rating__item">
+                <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </label>
+            <label for="rc3" class="rating__item">
+                <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </label>
+            <label for="rc4" class="rating__item">
+                <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </label>
+            <label for="rc5" class="rating__item">
+                <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                </svg>
+            </label>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="star" viewBox="0 0 26 28">
+                <path
+                        d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+            </symbol>
+        </svg>
+        <div class="button button_log_sig">
+            <span>Sign in</span>
+            <svg>
+                <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+                <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+            </svg>
+        </div>
+        <div class="button button_log_sig">
+            <span>Login</span>
+            <svg>
+                <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+                <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+            </svg>
+        </div>
+
+    </div>
+
+
+
+
+<div class="main-panel">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+        </button>
+
+
+        <a href="{{ asset('home') }}"><img id="logo_img" src="{{asset('images/test2.png')}}" width="75px" height="75px"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="navlink">
+                <li class="nav-item active" id="homepage">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+
+                <li class="nav-item dropdown" id="dropitem1">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catégories
+                    </a>
+                    <div class="dropdown-menu" id="ddm1" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Aventure</a>
+                        <a class="dropdown-item" href="#">Course</a>
+                        <a class="dropdown-item" href="#">Société</a>
+                        <a class="dropdown-item" href="#">Sport</a>
+                        <a class="dropdown-item" href="#">Combat</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="dropitem2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mini-jeux
+                    </a>
+                    <div class="dropdown-menu" id="ddm2" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Snake</a>
+                        <a class="dropdown-item" href="#">briques</a>
+                        <a class="dropdown-item" href="#">2048</a>
+                        <a class="dropdown-item" href="#">tetris</a>
+
+
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <form class="form-inline my-2 my-lg-0" action="{{ path('handleSearch') }}" method="post">
+            {{ render(controller(
+                'App\\Controller\\SearchController::search'
+            )) }}
+        </form>
+    </nav>
+    <!-- whole page -->
+    <!-- CARDS -->
+    <div class="container_modif">
+        {% for game in games %}
+            <div class=" container_card fade_in">
+                <div class="card">
+                    <div class="card__image-container">
+                        <img class="cardIMG" src="{{ asset(game.image) }}" alt="">
+                    </div>
+
+                    <svg class="card__svg" viewBox="0 0 800 500">
+
+                        <path
+                                d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                                stroke="transparent" fill="#333"/>
+                        <path class="cardLI"
+                              d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                              stroke="pink" stroke-width="3" fill="transparent"/>
+                    </svg>
+
+                    <div class="card__content">
+
+                        <h1 class="card__title p19"><a href="{{ path('game.page',{'id': game.id } ) }}"> {{ game.name }}
+                                <div class="s1"></div>
+                                <div class="s2"></div>
+                            </a>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+        <nav aria-label="Page navigation example" >
+            <ul class="pagination">
+                {% for p in 1..nbpage %}
+                    <li class="page-item"><a href="{{ path('category', {'page': p}) }}" class="page-link">{{ p }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+    <footer class="panel-footer">
+        <div class="row">
+            <section id="paiement" class="col-sm-4 text-center">
+                <div class="uk-width-1-4 uk-visible@l uk-first-column">
+                    <h5 class="uk-margin-small-bottom">Methodes de paiement</h5>
+                    <ul class="uk-iconnav">
+                        <li><img src="https://pictures.artify.tn/app/laposte.png?width=30" alt="La poste"
+                                 width="30">
+                        </li>
+                        <li class="uk-margin-small-left"><img
+                                    src="https://pictures.artify.tn/app/mastercard.png?width=30&amp;aspect_ratio=5%3A3"
+                                    alt="Mastercard" width="30"></li>
+                        <li class="uk-margin-small-left"><img
+                                    src="https://pictures.artify.tn/app/visa.png?width=30&amp;aspect_ratio=3%3A1"
+                                    alt="Visa"
+                                    width="30"></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="propos" class="col-sm-4 text-center">
+                <span>A propos nous:</span><br>
+                Nous sommes des étudiants de GL2 de l'INSAT<br>
+                If you want to konw more about us check our page :)
+                <p>we wish you the best </p>
+                <hr class="visible-xs">
+            </section>
+            <section id="testimonials" class="col-sm-4 text-center">
+                <div class="uk-width-expand uk-width-1-3@m uk-width-1-4@l uk-margin-bottom uk-visible@s">
+                    <p class="uk-text-meta uk-margin-small-bottom">Réseaux sociaux</p>
+                    <a href="https://www.instagram.com" target="_blank" uk-icon="icon: instagram"
+                       class="uk-icon">
+                        <svg
+                                width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                data-svg="instagram">
+                            <path
+                                    d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z">
+                            </path>
+                            <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                            <path
+                                    d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="uk-margin-small-left uk-icon"
+                       uk-icon="icon: facebook">
+                        <svg width="20" height="20" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg" data-svg="facebook">
+                            <path
+                                    d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel" target="_blank"
+                       class="uk-margin-small-left uk-icon"
+                       uk-icon="icon: youtube">
+                        <svg width="20" height="20" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg" data-svg="youtube">
+                            <path
+                                    d="M15,4.1c1,0.1,2.3,0,3,0.8c0.8,0.8,0.9,2.1,0.9,3.1C19,9.2,19,10.9,19,12c-0.1,1.1,0,2.4-0.5,3.4c-0.5,1.1-1.4,1.5-2.5,1.6 c-1.2,0.1-8.6,0.1-11,0c-1.1-0.1-2.4-0.1-3.2-1c-0.7-0.8-0.7-2-0.8-3C1,11.8,1,10.1,1,8.9c0-1.1,0-2.4,0.5-3.4C2,4.5,3,4.3,4.1,4.2 C5.3,4.1,12.6,4,15,4.1z M8,7.5v6l5.5-3L8,7.5z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <p class="uk-text-meta uk-margin-small-bottom">Langues</p>
+
+                    <a class="uk-text-meta changeLang_btn" data-lang="fr">fr</a>&nbsp;&nbsp;
+                    <a class="uk-text-meta changeLang_btn" data-lang="en">eng</a>&nbsp;&nbsp;
+                    <input id="languagesArray" type="hidden" value="fr">
+
+                </div>
+            </section>
+        </div>
+        <div class="text-center">&copy; Copyright projet-web-2020</div>
+    </footer>
+</div>
+</div>
+</body>
+
+
+<!-- FOOTER -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/category_js/catégorie_js.js') }}"></script>
+<script src="{{ asset('js/category_js/popper.min.js') }}"></script>
+<script src="{{ asset('js/category_js/bootstrap-material-design.min.js') }}"></script>
+<script src="{{ asset('js/category_js/perfect-scrollbar.jquery.min.js') }}"></script>
+<script src="{{ asset('js/category_js/material-dashboard.js?v=2.1.2') }}" type="text/javascript"></script>
+
+</html>

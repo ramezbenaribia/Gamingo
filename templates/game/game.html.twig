@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+{% block style %}
+    <link rel="stylesheet" href="{{ asset('css/Game.css') }}">
+{% endblock %}
+
+{% block title %}
+    {{ game.name }}
+{% endblock %}
+
+{% block content %}
+
+    <section class="container-fluid">
+        <div class="card">
+            <img src= "{{ asset( game.image ) }}" class="card-img-top"  alt={{ game.name }} >
+            <div class="card-body">
+                <h4 class="card-title">{{ game.name }}</h4>
+                <p class="card-text">
+                    {{ game.desccription }}
+                    <br> <br>
+                    Genre(s) : {{ game.categorie.name }}
+                    <br> <br>
+
+                    Original release date  : {{ game.date.format("d - m - Y") }}
+                    <br> <br>
+                    {% if game.license %}
+                    License  : {{ game.license }}
+                    <br> <br>
+                    {% endif %}
+                    Game mode  : {{ game.mode }}
+                    <br> <br>
+                    {% if game.engine %}
+                    Engine  : {{ game.engine }}
+                    <br> <br>
+                    {% endif %}
+                    Platforms  : {% for console in game.console.values %}
+                    {{ console }}
+                    {% endfor %}
+                </p>
+                <p class="card-text"><small class="text-muted"> &copy; credit to {{ game.company }}  company </small></p>
+            </div>
+        </div>
+        <div class="card">
+            <iframe width="850" height="506" src= {{ game.trailer}}
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            {% block article %}
+                <article>
+                    <strong> {{ game.titre1 }}</strong>
+                    <br>
+                    {{ game.text1 }}
+                    <br> <br>
+                    <strong> {{ game.titre2 }}</strong>
+                    <br>
+                    {{ game.text2 }}
+                    <br>
+
+                    <br> <br> <br>
+                    <strong> {{ game.titre3 }} </strong>
+                    <br>
+                    {{ game.text3 }}
+
+                    <br> <br> <br>
+                    <strong>  {{ game.titre4 }} </strong>
+                    <br>
+                    {{ game.text4 }}
+                </article>
+            {% endblock %}
+        </div>
+        <div class="card">
+            <img src="{{ asset( game.image2 ) }}"  class="card-img-top"  alt={{ game.name }} >
+            <div class="card-body">
+                <h4 class="card-title">Related to this game:</h4>
+                <p> </p>
+                {% for game_category in games_category %}
+                    <div class="card hvr-grow-shadow">
+                        <a href="{{ path('game.page',{'id': game_category.id } ) }}"  >
+                            <img src="{{ asset( game_category.image ) }}" class="card-img-top" alt={{ game_category.name }}>
+                            <div class="card-body"><p> {{ game_category.name }} </p> </div>
+                        </a>
+                    </div>
+                {% endfor %}
+
+
+
+                <h5 class="card-title">games related to the company of this game : </h5>
+                <p></p>
+
+                {% for game_company in games_company %}
+                    <div class="card hvr-grow-shadow">
+                        <a href="{{ path('game.page',{'id': game_company.id } ) }}"  >
+                            <img src="{{ asset( game_company.image ) }}" class="card-img-top" alt={{ game_company.name }}>
+                            <div class="card-body"><p> {{ game_company.name }} </p> </div>
+                        </a>
+                    </div>
+                {% endfor %}
+
+
+                <p class="card-text"><small class="text-muted">  &copy; credit to {{ game.company }} company </small></p>
+            </div>
+        </div>
+
+
+    </section>
+
+{% endblock %}

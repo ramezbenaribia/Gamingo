@@ -1,0 +1,40 @@
+
+  body {
+    background-color: #d3d7eb;
+    overflow-x: hidden;
+  }
+  #more {display: none;}
+  #myBtn {
+      text-align:  center;
+      margin-left: 46%;
+
+  }
+  #midd {
+    text-align: center;
+  }
+  #top{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    height: 400px;
+    width: 96%;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 3%;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-left:5% ;
+    margin-right: 5%;
+  }
+  #pic{
+    border-radius: 50%;
+    height: 155px;
+    width: 155px;
+    margin-left: 15px;
+
+  }

@@ -1,0 +1,41 @@
+
+.rounded-input {
+    color: #194d70;
+    background-color: #EDF5F5;
+    padding:10px;
+    border-radius:10px;
+    border:0;
+    box-shadow: 0 0 15px 4px rgba(100, 133, 185, 0.43);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: auto;
+    width: 90%;
+}
+.rounded-input:hover , .rounded-input:active , .rounded-input:focus{
+    border: 2px solid #194d70;
+}
+.card .btn{
+    width: 35%;
+    margin: auto;
+    margin-bottom: 15px;
+    color:  #194d70;
+    background-color: #b2dbe6;
+}
+#game_trailer {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    float: right;
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 120px;
+}
+label {
+    display: flex;
+}
+.collapse .button {
+    display: none;
+}
