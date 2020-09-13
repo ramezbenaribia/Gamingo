@@ -2,69 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f0b0e44-5c67-4282-8fc6-c5c0e3b73d11" name="Default Changelist" comment="Gamingo">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Connected.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Edit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/EditGame.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Game.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Signin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/aboutus.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/catégorie_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/form_css/form_game.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/form_css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/form_css/util.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/material-dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/Edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/EditGame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/aboutus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/bootstrap-material-design.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/catégorie_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/material-dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/material-dashboard.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/material-dashboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/perfect-scrollbar.jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/category_js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/form_game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/form_js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/admin_profile.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/form_catégorie.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/form_game.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/gestion_category.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/gestion_jeux.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/gestion_personne.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Admin/main.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/category/category.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/console/console.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/game/EditGame.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/game/game.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/home.html .twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/personne/connected.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/personne/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/personne/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/personne/signup.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search/search.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20200913114248.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/css/material-dashboard-rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/css/material-dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/css/material-dashboard.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/css/material-dashboard.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/city-profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/img/new_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/core/bootstrap-material-design.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/core/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/core/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/core/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/material-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/material-dashboard.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/material-dashboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/arrive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/bootstrap-selectpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/bootstrap-tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/jasny-bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/jquery-jvectormap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/jquery.bootstrap-wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/jquery.tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/perfect-scrollbar.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Admin/assets/js/plugins/sweetalert2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/02c8cbfb855d46f5d6b651b0b767837bnhl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/0ee9311164b49ece1ded1797f64f6f2dpes2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/10671b607446d773fe0c11b9869bc885nhl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/309cfcd3a5cdfdbeb08d4859f9dd9e86f12.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/35640a69e3e82883a9c6f2fa247bab02934137.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/35ae97bcfd1477f5bbecba0d53f45cc4_MG_3479.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/35ef9705d563add12b7d49ce55521ae045853040_605635283198665_3624966695770128384_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/3a31d59ab6c00fd1b2640d753d9c9a75nba2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/3de2cd53623a3fac08e4b53a60e32fabf1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/431a2f9fa5e5a2eccd6dbe2aebd46b31mahdi.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/4485fc93ff72398d0167a6b039d27f61course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/463d59751ed72b4160e90f1e568da1d0GH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/4b9d4d8647f6d57d634d729c10f01f95_MG_3479.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/52273e0905ca3905a67d27421c11512fPES2020-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/54c74be2ef7240bc43b339a32ec83269pes2020.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/58630c818e5fcd18915c5d1e46ae7c54call_of_duty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/5e59c4bf3c972ce5461594ef27dcf83aProbotector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/6788edbcb28c28b6ff2d58fbaec5de57ghassen.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/686b54a28ff1ffa4dd3cea56c8435b4b_MG_3478.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/6950ecdec4c4170354a08e2c8f3e5775nhl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/7549843b7106a3df177892c29af0268bnfl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/7810ca9903106e5389b705531f435b74nfl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/7bd87a819a9ce220a5b63c926af59c06FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/814f8829ed8dd8961dbb6460e81bb37e_MG_3478.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/819084f511f6908504f7738444ac21e0893644.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/8459659be03e68876caf37db288ea0d5FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/8562d8dd0e8519adb309a7b1a5ef47f59vTlBp1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/867adeda3ab60db958dea053c6f35a32GH2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/8ad88e1abd6355372eec2b25ba1b38e2nfl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/8fda3555daf8f11a87891e7ca327aab1FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/94dc61c76ecf5570d17432110aef814dnfl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/972e60fe24be1d381c8183cd49e4d59fnhl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/9d454d6df0962f90edea178ce52ebf81_MG_3478.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/a2cb71f8a451f91a620c4865ef014964PES2020-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/a96a03edd0b6f6565d111205e6a8b687pes2020.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/action.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/adventure.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/b30c69aefd7b601f19929c0be3eb4855FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/b65349a18f85ca0d783622462baf24e0nfl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/b98a5f499c30a1dbf08cb511f58d2db0call_of_duty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/c4d610d6b523a194e5587e53fa04b516Probotector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/c69d5bb0cc7d7e3ee6e48cc4dceb97bffps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/c6f6e7b5994619655ec107928f00661e_MG_3478.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/c7840c0120d811255e246a7588e35e4e9vTlBp1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/cb96485b5b10533b83fec2ed1ae3267f_MG_3478.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/cbb14f3ce7d8a0c788d70c0f19be6817FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/cd02e746cae5343b66b970e2a6568ae8nhl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/cfb26376f572762e25e60a2a1dceaffenhl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/d9694581caa61dae5205fdbd556b66d59vTlBp1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/da5cbe4b659fb0d0e9b825b597ad26e3_MG_3478.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/daa5ba682eedeb95bd25b9cfba449ea5nhl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/db76f45b6de957d87ea8820abfb918f7nba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/dfa24f20bbea0747d00941bef8eb2095PES2008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/e31dcce4c0da970407f112a58ca5d6adnfl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/efe62f277b195a5390b19cbec73fe787FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/f5b1ebe09b24e655114f601a2c40f57bpes2020.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/f9af9beeaa224fb020c84e5d69e629b2893644.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/fbe8b5b384c2308e84300050980c75bcnhl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/fe082c086142d869a8d417bbb1986102FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/ff779f3fb0fa4c654fe84b0d33756a40FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/simulation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/sports.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/uploads/strategie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/form_staff/images/icons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/form_staff/images/icons/game-controller.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/form_staff/images/icons/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/FIFA2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/GH-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/GH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/GH2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/GH2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PES2008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PES2011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PES2013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PES2017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PES2018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/PES2020-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Probotector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/RPG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/action.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/adventure.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/call_of_duty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f12.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/free_fire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/gamers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ghassen.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jeux_de_briques.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/lol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/mahdi.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pes2019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pes2020.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pes2020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pes2020.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ps.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/ramez.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/silent-hill.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/simulation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/snake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sports.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/strategie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tetris.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wafa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/xbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/yu-gi-oh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AboutusController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminNotificationsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ConsoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GameController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GestionCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GestionJeuxController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GestionPersonneController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/JeuBriquesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PersonneController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CategorieType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/GameType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PersonneType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CategorieRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ConsoleRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/GameRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PersonneRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/gestion_category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Admin/gestion_category.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Admin/gestion_jeux.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Admin/gestion_jeux.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html .twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
@@ -169,12 +305,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hO5EnqlPMmqMEDSPstJaSWxcry" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -184,6 +326,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Gamingo\Gamingo" />
+      <recent name="C:\xampp\htdocs\Gamingo\Gamingo\src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -193,7 +342,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599869188270</updated>
-      <workItem from="1599869189360" duration="4539000" />
+      <workItem from="1599869189360" duration="4570000" />
+      <workItem from="1599929275757" duration="4917000" />
+      <workItem from="1599953571548" duration="759000" />
+      <workItem from="1599955185524" duration="775000" />
+      <workItem from="1599957952415" duration="24000" />
+      <workItem from="1599991413820" duration="4907000" />
     </task>
     <task id="LOCAL-00001" summary="Gamingo">
       <created>1599872085434</created>
@@ -202,25 +356,37 @@
       <option name="project" value="LOCAL" />
       <updated>1599872085434</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gamingo">
+      <created>1599874276919</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599874276919</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Gamingo" />
     <option name="LAST_COMMIT_MESSAGE" value="Gamingo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1599872136666">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1600001612231">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599872136666" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599872152170">
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600001612231" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1599997441836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599872152170" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599997441836" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599874280864">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599874280864" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599873418356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
